@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - UniSpend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0L10.5 5.5L16 8L10.5 10.5L8 16L5.5 10.5L0 8L5.5 5.5L8 0Z" fill="currentColor"/>
+                        </svg>
+                        <span>UniSpend</span>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 32px;">
+                    <div class="search-container">
+                        <div class="search-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="search-input" placeholder="Search">
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; padding: 0 10px; height: 40px; background-color: #E8EDF5; border-radius: 8px;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 10C12.7614 10 15 7.76142 15 5C15 2.23858 12.7614 0 10 0C7.23858 0 5 2.23858 5 5C5 7.76142 7.23858 10 10 10Z" fill="currentColor"/>
+                            <path d="M10 12C5.58172 12 2 14.6863 2 18H18C18 14.6863 14.4183 12 10 12Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div style="width: 40px; height: 40px; border-radius: 20px; overflow: hidden;">
+                        <img src="assets/images/profile-avatar.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div style="display: flex; min-height: calc(100vh - 80px);">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2 style="font-size: 16px; font-weight: 500; margin-bottom: 16px;">UniSpend</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-item active">
+                    <div class="nav-item-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 3V21" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <span>Dashboard</span>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-item-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span>My Expenses</span>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-item-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <span>Budget Limits</span>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-item-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span>Reports</span>
+                </div>
+                <div style="margin-top: 16px; display: flex; flex-direction: column; gap: 8px;">
+                    <div class="nav-item">
+                        <div class="nav-item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Settings</span>
+                    </div>
+                    <div class="nav-item">
+                        <div class="nav-item-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Log Out</span>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Dashboard Content -->
+        <main style="flex: 1; background-color: #F7FAFC;">
+            <div style="display: flex; flex-direction: column; gap: 0;">
+                <!-- Dashboard Title -->
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding: 16px;">
+                    <h1 style="font-size: 32px; font-weight: 700;">Dashboard</h1>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <div class="card-label">Total Balance</div>
+                        <div class="card-value">$1,250.00</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-label">Monthly Budget</div>
+                        <div class="card-value">70%</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-label">Days Until Semester Ends</div>
+                        <div class="card-value" style="font-size: 24px;">45 Days</div>
+                    </div>
+                </div>
+
+                <!-- Monthly Budget Progress -->
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <h3 style="font-size: 16px; font-weight: 500;">Monthly Budget</h3>
+                    </div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="progress-text">70% Used</span>
+                    </div>
+                </div>
+
+                <!-- Spending Overview -->
+                <div class="spending-overview">
+                    <h3 class="section-title">Spending Overview</h3>
+                    <div style="display: flex; flex-direction: column; gap: 8px; padding: 24px 16px;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <h4 style="font-size: 16px; font-weight: 500;">Spending Overview</h4>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart-bar">
+                                <div class="chart-column" style="height: 137px;"></div>
+                                <div class="chart-label">Jan</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-column" style="height: 137px;"></div>
+                                <div class="chart-label">Feb</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-column" style="height: 137px;"></div>
+                                <div class="chart-label">Mar</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-column" style="height: 137px;"></div>
+                                <div class="chart-label">Apr</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-column" style="height: 137px;"></div>
+                                <div class="chart-label">May</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-column" style="height: 137px;"></div>
+                                <div class="chart-label">Jun</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-column" style="height: 137px;"></div>
+                                <div class="chart-label">Jul</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Transactions -->
+                <div class="transactions-container">
+                    <h3 class="section-title">Recent Transactions</h3>
+                    <div class="transactions-table">
+                        <div class="table-header">
+                            <div class="table-header-cell">Date</div>
+                            <div class="table-header-cell">Description</div>
+                            <div class="table-header-cell">Category</div>
+                            <div class="table-header-cell">Amount</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">2023-09-15</div>
+                            <div class="table-cell">Textbooks</div>
+                            <div class="table-cell">
+                                <span class="category-badge">Education</span>
+                            </div>
+                            <div class="table-cell">-$150.00</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">2023-09-14</div>
+                            <div class="table-cell">Groceries</div>
+                            <div class="table-cell">
+                                <span class="category-badge">Food</span>
+                            </div>
+                            <div class="table-cell">-$75.00</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">2023-09-13</div>
+                            <div class="table-cell">Part-time Job</div>
+                            <div class="table-cell">
+                                <span class="category-badge">Income</span>
+                            </div>
+                            <div class="table-cell">+$200.00</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">2023-09-12</div>
+                            <div class="table-cell">Coffee</div>
+                            <div class="table-cell">
+                                <span class="category-badge">Food</span>
+                            </div>
+                            <div class="table-cell">-$5.00</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">2023-09-11</div>
+                            <div class="table-cell">Movie Ticket</div>
+                            <div class="table-cell">
+                                <span class="category-badge">Entertainment</span>
+                            </div>
+                            <div class="table-cell">-$12.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add New Expense Button -->
+                <div style="display: flex; justify-content: flex-end; padding: 0 20px 20px;">
+                    <button class="btn btn-primary" style="gap: 16px; padding: 0 24px 0 16px; height: 56px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Add New Expense</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

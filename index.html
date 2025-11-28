@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniSpend - Master Your Student Budget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0L10.5 5.5L16 8L10.5 10.5L8 16L5.5 10.5L0 8L5.5 5.5L8 0Z" fill="currentColor"/>
+                        </svg>
+                        <span>UniSpend</span>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#support" class="nav-link">Support</a>
+                    <a href="dashboard.html" class="btn btn-primary">Download</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div style="display: flex; align-items: center; gap: 32px; padding: 40px 16px;">
+                    <div class="hero-image" style="background-image: url('assets/images/hero-image.png'); flex: 1; height: 280px; border-radius: 8px;"></div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; gap: 32px;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <h1 class="hero-title" style="width: 491px; height: 120px;">Master Your Student Budget</h1>
+                            <p class="hero-description" style="width: 491px;">
+                                UniSpend helps students track expenses, set monthly limits, and manage tuition reminders, ensuring financial control throughout their academic journey.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="dashboard.html" class="btn btn-primary btn-large">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section style="padding: 20px 16px 12px;">
+        <div class="container">
+            <h3 class="section-title text-center" style="padding: 0; margin-bottom: 16px;">Trusted by Students at:</h3>
+            <div class="university-logos">
+                <img src="assets/images/university-logo-1.png" alt="University 1" class="university-logo">
+                <img src="assets/images/university-logo-2.png" alt="University 2" class="university-logo">
+                <img src="assets/images/university-logo-3.png" alt="University 3" class="university-logo">
+                <img src="assets/images/university-logo-4.png" alt="University 4" class="university-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div style="display: flex; flex-direction: column; gap: 40px; padding: 40px 16px;">
+                <div style="display: flex; flex-direction: column; gap: 8px; width: 720px; height: 45px;">
+                    <h2>Manage Your Finances with Ease</h2>
+                    <p style="width: 720px; margin-top: 8px;">
+                        UniSpend offers a suite of tools designed to help students stay on top of their finances, from tracking daily expenses to setting monthly spending limits and receiving timely tuition reminders.
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h3 class="feature-title">Track Expenses</h3>
+                        </div>
+                        <p class="feature-description">
+                            Monitor your spending in real-time with detailed expense tracking. Categorize transactions, view spending patterns, and identify areas where you can save.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                                <path d="M9 3V21" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <h3 class="feature-title">Monthly Limits</h3>
+                        </div>
+                        <p class="feature-description">
+                            Set monthly spending limits to stay within your budget. Receive notifications when you're approaching your limit to avoid overspending.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <h3 class="feature-title">Tuition Reminders</h3>
+                        </div>
+                        <p class="feature-description">
+                            Never miss a tuition payment with timely reminders. Keep track of upcoming deadlines and payment amounts to ensure you're always on time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h3 class="section-title text-center">What Students Are Saying</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/testimonial-1.png" alt="Student testimonial" class="testimonial-avatar">
+                    </div>
+                    <p class="testimonial-text">
+                        "UniSpend has been a game-changer for managing my finances as a student. I can easily track my expenses and stay within my budget."
+                    </p>
+                </div>
+                <div class="testimonial-card">
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/testimonial-2.png" alt="Student testimonial" class="testimonial-avatar">
+                    </div>
+                    <p class="testimonial-text">
+                        "I love the monthly limits feature. It helps me control my spending and avoid overspending, which is crucial on a student budget."
+                    </p>
+                </div>
+                <div class="testimonial-card">
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/testimonial-3.png" alt="Student testimonial" class="testimonial-avatar">
+                    </div>
+                    <p class="testimonial-text">
+                        "The tuition reminders are a lifesaver! I never have to worry about missing a payment deadline again. UniSpend keeps me organized and stress-free."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 32px; padding: 80px 40px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; width: 720px;">
+                    <h2 class="cta-title">Ready to Control Your Budget?</h2>
+                </div>
+                <div style="display: flex; justify-content: center; width: 100%;">
+                    <a href="dashboard.html" class="btn btn-primary btn-large">Get Started Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Contact Us</a>
+                </div>
+                <p class="footer-copyright">© 2023 UniSpend. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
